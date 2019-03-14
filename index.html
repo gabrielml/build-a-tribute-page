@@ -4,27 +4,89 @@
     <meta charset="UTF-8">
     <title>Tribute Page</title>
     <style>
+        /* Allows to visualize the structure of my page
         * {
             border: 1px solid red;
         }
+        */
+        html, body {
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            text-align: center;
+            min-width: 260px;
+            color: #333;
+        }
 
-        #image{
-            width: 100%;  /* #Layout 1: width & display */
+        #main {
+            margin: 30px auto;
+            padding: 15px;
+            border: 0 solid;
+            border-radius: 5px;
+            background: #eee;
+        }
+
+        #image { /* freeCodeCamp Layout test */
+            width: 100%; /* #Layout 1: width & display */
             display: block;
             max-width: 100%; /* #Layout 2: max-width, margin-left & margin-rigth */
             margin-left: auto;
-            margin-rigth: auto;
+            margin-right: auto;
+        }
+
+        #img-div {
+            margin: -5px;
+            margin-top: 20px;
+            width: 100%;
+            border: 5px solid white;
+            background: white;
+        }
+
+        #img-caption {
+            margin: 15px;
+        }
+
+        #headline {
+            margin-top: 50px;
+            text-align: left;
+        }
+
+        ul {
+            max-width: 550px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        blockquote {
+            font-style: italic;
+        }
+
+        footer p:last-child {
+            text-align: left;
+        }
+
+        footer p:last-child :hover {
+            background: green;
+            color: white;
+            border-radius: 5px;
+        }
+
+        footer p:last-child a {
+            color: black;
+            text-decoration: none;
         }
 
 
     </style>
 </head>
 <body>
-<header id="title">
-    <h1>Severo Ochoa de Albornoz</h1>
-    <p>The man who laid the keys to deciphering the genetic code</p>
-</header>
 <article id="main">
+    <div id="title">
+        <h1>Severo Ochoa de Albornoz</h1>
+        <p>The man who laid the keys to deciphering the genetic code</p>
+    </div>
     <figure id="img-div">
         <img id="image" src="img/severo-ochoa-nobel-prize.jpg" alt="Biochemist Severo Ochoa. US Postal Service Stamp">
         <figcaption id="img-caption">Ochoa (in the center) congratulated by his team after reciving the Nobel Prize
@@ -32,14 +94,15 @@
         </figcaption>
     </figure>
     <section id="tribute-info">
-        <h2>Here's a time line of Severo Ochoa's life:</h2>
         <ul>
+            <h3 id="headline">Here's a time line of Severo Ochoa's life:</h3>
             <li>
-                <p><strong>1905 </strong>Born in Luarca, <a href="https://en.wikipedia.org/wiki/Asturias">Asturias</a>,
+                <p><strong>1905 </strong> - Born in Luarca, <a
+                        href="https://en.wikipedia.org/wiki/Asturias">Asturias</a>,
                     <a href="https://en.wikipedia.org/wiki/Spain"> Spain</a></p>
             </li>
             <li>
-                <p><strong>1923 </strong>Went to the <a
+                <p><strong>1923 </strong> - Went to the <a
                         href="https://en.wikipedia.org/wiki/Complutense_University_of_Madrid">University of Madrid</a>
                     MedicalSchool and studied
                     with Professor <a href="https://en.wikipedia.org/wiki/Juan_Negr%C3%ADn">Juan Negrín</a> who proposed
@@ -47,61 +110,64 @@
                     instructor while Ochoa finished his degree</p>
             </li>
             <li>
-                <p><strong>1927 </strong>Spent the summer in the University of Glasgow working with D. Noel Paton on
+                <p><strong>1927 </strong> - Spent the summer in the University of Glasgow working with D. Noel Paton on
                     creatine metabolism. Returning to Spain submitted a paper describing the work to the <em>Journal of
                         Biological Chemistry</em> marking the beginning of Ochoa's biochemistry career</p>
             </li>
             <li>
-                <p><strong>1929 </strong>Join Otto Meyerhof's laboratory at the Kaiser Wilhelm Institute for Biology in
+                <p><strong>1929 </strong> - Join Otto Meyerhof's laboratory at the Kaiser Wilhelm Institute for Biology
+                    in
                     Berlin-Dahlem. Interacting with scientists such as Otto Warburg, Carl Neuberg, Einar Lundsgaard and
                     Fritz Lipmann in addition to Meyerhof. The Institute was a <em>hot bed</em> of the discipline of
                     biochemistry</p>
             </li>
             <li>
-                <p><strong>1931 </strong>Began postdoctoral study at the London National Institute for Medical Research
+                <p><strong>1931 </strong> - Began postdoctoral study at the London National Institute for Medical
+                    Research
                     (NIMR), where he worked with Sir Henry Dale. His research involved the enzyme glyoxalase and was at
                     the cutting edge of the study of intermediary metabolism</p>
             </li>
             <li>
-                <p><strong>1936 </strong>Returned to Meyerhof's Kaiser Wilhelm Institute for Biology that had become
+                <p><strong>1936 </strong> - Returned to Meyerhof's Kaiser Wilhelm Institute for Biology that had become
                     one of the world's foremost biochemical facilities focused on processes such as glycolysis and
                     fermentation</p>
             </li>
             <li>
-                <p><strong>1941 </strong>Went to the United States where held many positions at several Universities</p>
+                <p><strong>1941 </strong> - Went to the United States where held many positions at several Universities
+                </p>
             </li>
             <li>
-                <p><strong>1956 </strong>Became an American citizen</p>
+                <p><strong>1956 </strong> - Became an American citizen</p>
             </li>
             <li>
-                <p><strong>1959 </strong>Was awarded the Nobel Prize for Physiology or Medicine for his work on the
+                <p><strong>1959 </strong> - Was awarded the Nobel Prize for Physiology or Medicine for his work on the
                     synthesis of RNA</p>
             </li>
             <li>
-                <p><strong>1985 </strong>Returned to Spain where gave advice to Spanish science policy authorities</p>
+                <p><strong>1985 </strong> - Returned to Spain where gave advice to Spanish science policy authorities
+                </p>
             </li>
             <li>
-                <p><strong>1978 </strong>.Was also a recipient of U.S. National medal of Science</p>
+                <p><strong>1978 </strong> - Was also a recipient of U.S. National medal of Science</p>
             </li>
             <li>
-                <p><strong>1993 </strong> Died in Madrid, Spain in November 1</p>
+                <p><strong>1993 </strong> - Died in Madrid, Spain in November 1</p>
             </li>
         </ul>
+        <blockquote cite="https://www.bbvaopenmind.com/ciencia/grandes-personajes/severo-ochoa-la-quimica-de-la-vida/">
+            "Life
+            is explainable almost, if not in its entirety, in chemical terms. Love is physical and chemical"
+        </blockquote>
+        <h3>If you have time, you should read more about this incredible human being on his
+            <a id="tribute-link" href="https://en.wikipedia.org/wiki/Severo_Ochoa" target="_blank">Wikipedia entry.</a>
+        </h3>
     </section>
 </article>
 <footer>
-    <blockquote cite="https://www.bbvaopenmind.com/ciencia/grandes-personajes/severo-ochoa-la-quimica-de-la-vida/">
-        "Life
-        is explainable almost, if not in its entirety, in chemical terms. Love is physical and chemical"
-    </blockquote>
-    If you have time, you should read more about this incredible human being on his <a id="tribute-link"
-                                                                                       href="https://en.wikipedia.org/wiki/Severo_Ochoa"
-                                                                                       target="_blank">Wikipedia
-    entry.</a>
     <p>"Created by" <a href="#">Gabriel Mijares Lobato</a></p>
     <p>"Inspired by" <a href="https://www.freecodecamp.org/">freeCodeCamp</a></p>
+    <p><a href="#main">Back to top</a></p>
 </footer>
-<p><a href="#title">Back to top</a></p>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
