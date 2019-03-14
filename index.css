@@ -1,0 +1,73 @@
+/* Allows to visualize the structure of my page
+    * {
+        border: 1px solid red;
+    }
+*/
+html, body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-align: center;
+    min-width: 260px;
+    color: #333;
+}
+
+#main {
+    margin: 30px auto;
+    padding: 15px;
+    border: 0 solid;
+    border-radius: 5px;
+    background: #eee;
+}
+
+#image { /* freeCodeCamp Layout test */
+    width: 100%; /* #Layout 1: width & display */
+    display: block;
+    max-width: 100%; /* #Layout 2: max-width, margin-left & margin-rigth */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img-div {
+    margin: -5px;
+    margin-top: 20px;
+    width: 100%;
+    border: 5px solid white;
+    background: white;
+}
+
+#img-caption {
+    margin: 15px;
+}
+
+#headline {
+    margin-top: 50px;
+    text-align: left;
+}
+
+ul {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+li {
+    margin: 10px;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+footer p:last-child {
+    text-align: left;
+}
+
+footer p:last-child :hover {
+    background: green;
+    color: white;
+    border-radius: 5px;
+}
+
+footer p:last-child a {
+    color: black;
+    text-decoration: none;
+}
